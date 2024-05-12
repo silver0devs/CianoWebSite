@@ -8,9 +8,9 @@ import { BookOpenIcon, Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/
 export const NavBar = () => {
 
     let Links =[
-        {name:"DESARROLLOS",link:"/CianoWebSite"},
-        {name:"CAMP. PUBLICITARIAS",link:"/CianoWebSite"},
-        {name:"CONTACTO",link:"/CianoWebSite/contacto"},
+        {name:"DESARROLLOS",link:"/"},
+        {name:"CAMP. PUBLICITARIAS",link:"/"},
+        {name:"CONTACTO",link:"/contacto"},
       ];
       let [open, setOpen] =useState(false);
 
@@ -21,7 +21,7 @@ export const NavBar = () => {
         <div class='md:flex items-center justify-between dark:bg-gray-900 py-4 md:px-10 px-7'>
          {/* logo section */}
          <div className='font-bold text-2xl cursor-pointer flex items-center gap-1'>
-         <Link  to={'/CianoWebSite'} style={{ textDecoration: 'none'}}><div class='font-normal text-gray-200'>Ciano Soluciones</div></Link>
+         <Link  to={'/'} style={{ textDecoration: 'none'}}><div class='font-normal text-gray-200'>Ciano Soluciones</div></Link>
              
          </div>
          {/* Menu icon */}

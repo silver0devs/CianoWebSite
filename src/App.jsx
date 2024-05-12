@@ -14,6 +14,7 @@ function App() {
             <BrowserRouter>
               <NavBar/>
               <Routes>
+                <Route path='/CianoWebSite' element ={<Principal/>}/>
                 <Route path='/' element ={<Principal/>}/>
                 <Route path='/carrito' element = {<Cart/>}/>
                 <Route path='/contacto' element = {<Contact/>}/>

@@ -21,7 +21,7 @@ export const NavBar = () => {
         <div class='md:flex items-center justify-between dark:bg-gray-900 py-4 md:px-10 px-7'>
          {/* logo section */}
          <div className='font-bold text-2xl cursor-pointer flex items-center gap-1'>
-         <Link  to={'/'} style={{ textDecoration: 'none'}}><div class='font-normal text-gray-200'>Ciano Soluciones</div></Link>
+         <Link  to={'/CianoWebSite'} style={{ textDecoration: 'none'}}><div class='font-normal text-gray-200'>Ciano Soluciones</div></Link>
              
          </div>
          {/* Menu icon */}

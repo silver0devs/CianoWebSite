@@ -8,9 +8,9 @@ import { BookOpenIcon, Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/
 export const NavBar = () => {
 
     let Links =[
-        {name:"DESARROLLOS",link:"/"},
-        {name:"CAMP. PUBLICITARIAS",link:"/"},
-        {name:"CONTACTO",link:"/contacto"},
+        {name:"DESARROLLOS",link:"/CianoWebSite"},
+        {name:"CAMP. PUBLICITARIAS",link:"/CianoWebSite"},
+        {name:"CONTACTO",link:"/CianoWebSite/contacto"},
       ];
       let [open, setOpen] =useState(false);
 

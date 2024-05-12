@@ -19,27 +19,7 @@ export const ItemCount = ({ stock, onAdd}) => {
     <>
     
         <div className='d-flex'>
-        {/*}
-            <Container className="mt-3" style={{ width: "auto" }}>
-            <Form className="text-center">
-                <Form.Group className="mb-3" >
-                    <Container className='center'>
-                        <InputGroup className="mb-3">
-                            <Button variant="secondary" onClick={decrease}>-</Button>
-                            <Form.Control type ="number" value={count} readOnly />
-                            <Button variant="success" onClick={increase}>+</Button>
-                        </InputGroup>
-                    </Container>
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                    <Container className='center'>
-                        <Button  variant="danger" onClick={handleAdd}>Agregar al carrito</Button>
-                    </Container>
-                </Form.Group>
-            </Form>
-    </Container>*/}
-            
-            
+        
             <button variant="secondary" onClick={decrease}>-</button>
             <input type ="number" value={count} readOnly></input>
             <input type ="number" value={count} readOnly />

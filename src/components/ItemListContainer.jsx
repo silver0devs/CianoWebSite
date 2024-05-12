@@ -16,8 +16,6 @@ export const ItemListContainer = () =>
                     ? query(collection(db, "items"), where("categoryId", "==", id))
                     : collection(db, "items");
         
-                //const categoriesRef = collection(db, "categories");
-        
                 try {
                     // Fetch items
                     const itemsSnapshot = await getDocs(itemsRef);
@@ -25,19 +23,6 @@ export const ItemListContainer = () =>
                         id: doc.id,
                         ...doc.data()
                     }));
-        
-                    /* Fetch categories
-                    const categoriesSnapshot = await getDocs(categoriesRef);
-                    const categoriesMap = categoriesSnapshot.docs.reduce((acc, doc) => {
-                        acc[doc.id] = doc.data().title;
-                        return acc;
-                    }, {});
-        
-                    // Assign category titles to items
-                    const itemsWithCategories = itemsData.map(item => ({
-                        ...item,
-                        category: categoriesMap[item.categoryId] || ""
-                    }));*/
         
                     setProducts(itemsData);
                 } catch (error) {

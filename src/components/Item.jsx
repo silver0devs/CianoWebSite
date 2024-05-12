@@ -32,19 +32,5 @@ export const Item = ({ product}) => {
     </div>
     </div>
 
-
-
-    {/*<Card className="text-center" style={{ width: '20rem', background:'grey'}}>
-      
-      <Card.Body>
-        <Card.Title></Card.Title>
-        <Image style={{ height: 300, width: 180 }} src={product.image} thumbnail/>
-        <Card.Text></Card.Text>
-        <Card.Text>{product.category}</Card.Text>
-        <Link to={`/ProyectoFinalReact/item/${product.id}`}>
-            <Button variant="primary">Detalles</Button>
-        </Link>
-      </Card.Body>
-    </Card>*/}
 </>
 )}

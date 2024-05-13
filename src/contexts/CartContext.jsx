@@ -11,7 +11,6 @@ export const Provider = ({ children }) => {
     const removeItem = (id) => {
         const filtered = items.filter((i) => i.item.id !== id);
         setItems(filtered);
-        sessionStorage.setItem("cart", JSON.stringify(filtered))
     }
 
     const addItem = (item, quantity) => {
@@ -32,7 +31,6 @@ export const Provider = ({ children }) => {
         }else{
         setItems([...items,{item, quantity}]);
         }
-        sessionStorage.setItem("cart", JSON.stringify(items))
     }
 
     return(
